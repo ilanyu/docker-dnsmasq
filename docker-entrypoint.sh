@@ -2,6 +2,8 @@
 
 gfwlist2dnsmasq -file /etc/dnsmasq.d/dnsmasq.servers.conf
 
+adb2dnsmasq -save.mode "t" -save.path "/etc/dnsmasq.d/dnsmasq.adb.conf"
+
 if [ -z "$DNSMASQ_DNS_SERVER" ]; then
 	export DNSMASQ_DNS_SERVER=114.114.114.114
 fi
